@@ -1,3 +1,16 @@
+/*************** Reset *********************/
+* {
+  margin: 0rem;
+  padding: 0rem;
+  /* box-sizing: border-box; */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /************************************************ MOBIL ************************************************/
 
 /****************** Grid **************/
@@ -73,7 +86,6 @@ h3 {
 }
 
 .logo-btn:hover {
-  transform: scale(1.05);
   background-color: #a61919;
   color: white;
 }
@@ -103,7 +115,7 @@ h3 {
   .Instructions {
     grid-column: 2/4;
     grid-row: 2/4;
-    margin-top: -23px;
+    margin-top: -10px;
   }
 
   .blå_boks_h3 {
