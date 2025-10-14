@@ -1,0 +1,21 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*****************filter knapper****************/
+.buttons {
+  justify-content: space-evenly;
+}
+.filter {
+  margin-top: 20px;
+  margin-left: 30px;
+}
