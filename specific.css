@@ -1,3 +1,115 @@
+/************************************************ MOBIL ************************************************/
+
+/****************** Grid **************/
+.grid_3 {
+  /*** difficulty, serving og cookingtime ***/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/******************* img *****************/
+img {
+  max-width: 600px;
+}
+
+.img_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/************** tekst **************/
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 16px;
+  text-align: center;
+}
+
+/****************** blå bokse ***************/
+.blå_boks_h3 {
+  /*** boks omkring difficultu, servings og cookingtime ***/
+  border: 2px #1b45a9 solid;
+  min-width: 50px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blå_boks {
+  /*** boks omkring ingridients og instructions ***/
+  border: 2px #1b45a9 solid;
+  padding: 10px;
+  margin: 10px;
+}
+
+.left_margin {
+  /*** skubber listerne ind i den blå boks ***/
+  margin-left: 20px;
+}
+
+/****************** Button ******************/
+.logo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0px 8px;
+  border: 2px solid #a61919;
+  background-color: transparent;
+  border-radius: 6px;
+  color: #a61919;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.logo-btn:hover {
+  transform: scale(1.05);
+  background-color: #a61919;
+  color: white;
+}
+
+.logo-btn .logo {
+  width: 30px; /* Logo-størrelse */
+  height: 30px;
+}
+
+/************************************************ DESKTOP **************************************************/
+@media (min-width: 760px) {
+  /***************** grid **************/
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .info {
+    grid-column: 2/4;
+  }
+
+  .Ingridients {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .Instructions {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    margin-top: -23px;
+  }
+
+  .blå_boks_h3 {
+    padding: 15px;
+  }
+}
 /*************** Reset *********************/
 * {
   margin: 0;
