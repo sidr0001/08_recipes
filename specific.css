@@ -14,10 +14,10 @@ img {
 /************************************************ MOBIL ************************************************/
 
 /****************** Grid **************/
-.grid_3 {
+.grid_info {
   /*** difficulty, serving og cookingtime ***/
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 /******************* img *****************/
@@ -50,7 +50,8 @@ h3 {
   /*** boks omkring difficultu, servings og cookingtime ***/
   border: 2px #1b45a9 solid;
   min-width: 50px;
-  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -60,7 +61,7 @@ h3 {
 .blå_boks {
   /*** boks omkring ingridients og instructions ***/
   border: 2px #1b45a9 solid;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
 }
 
@@ -121,18 +122,9 @@ h3 {
   .blå_boks_h3 {
     padding: 15px;
   }
-}
-/*************** Reset *********************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
+  .grid_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
-
-/*******************************************/
