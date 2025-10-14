@@ -12,6 +12,11 @@ img {
 }
 
 /*****************filter knapper****************/
+.filter_h2 {
+  font-size: 2.5rem;
+  margin-top: 45px;
+  margin-left: 31px;
+}
 .buttons {
   justify-content: space-evenly;
 }
@@ -20,7 +25,12 @@ img {
   margin-left: 30px;
 }
 
-.layout {
+/* .layout {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+} */
+#recipes_list {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -29,14 +39,17 @@ img {
 article {
   background-color: rgb(210, 225, 239);
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: subgrid;
+  gap: 10px;
 }
 
-.grid-1-1 {
+/* .grid-1-1 {
   display: grid;
   grid-template-columns: subgrid;
   gap: 10px;
   grid-column: 1 / -1;
-}
+} */
 
 .blaaboks {
   border: 2px blue solid;
@@ -49,21 +62,22 @@ article {
   width: 170px;
   height: auto;
   display: block;
+  border-radius: 50%;
 }
 
-.layout {
+/* .layout {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
-}
+} */
 
 @media (min-width: 800px) {
-  .layout {
+  #recipes_list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.grid-1-1 {
+article {
   display: grid;
   grid-template-columns: subgrid;
   gap: inherit;
@@ -72,11 +86,14 @@ article {
 
 /********  Kortdesign  *******/
 .blaaboks {
-  border: 2px solid blue;
+  border: 2px solid var(--primary-b-color);
   border-radius: 8px;
   padding: 20px;
   background: #fff;
   margin: 3rem;
+}
+a {
+  text-decoration: none;
 }
 
 /* lidt spacing inde i kortene */
@@ -87,5 +104,5 @@ article {
 
 .blaaboks p {
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1;
 }
