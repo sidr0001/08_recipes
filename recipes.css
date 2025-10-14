@@ -19,3 +19,73 @@ img {
   margin-top: 20px;
   margin-left: 30px;
 }
+
+.layout {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+article {
+  background-color: rgb(210, 225, 239);
+  border-radius: 10px;
+}
+
+.grid-1-1 {
+  display: grid;
+  grid-template-columns: subgrid;
+  gap: 10px;
+  grid-column: 1 / -1;
+}
+
+.blaaboks {
+  border: 2px blue solid;
+  border-radius: 7px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.blaaboks img {
+  width: 170px;
+  height: auto;
+  display: block;
+}
+
+.layout {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid-1-1 {
+  display: grid;
+  grid-template-columns: subgrid;
+  gap: inherit;
+  grid-column: 1 / -1;
+}
+
+/********  Kortdesign  *******/
+.blaaboks {
+  border: 2px solid blue;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+  margin: 3rem;
+}
+
+/* lidt spacing inde i kortene */
+.blaaboks h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.blaaboks p {
+  font-size: 20px;
+  line-height: 1.5;
+}
