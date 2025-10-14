@@ -12,6 +12,16 @@ img {
 }
 
 /*****************Menu*******************/
+
+main {
+  padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  background-color: rgb(254, 247, 227);
+}
+
 header {
   display: flex;
   justify-content: space-between;
