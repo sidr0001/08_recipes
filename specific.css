@@ -21,14 +21,17 @@ img {
 }
 
 /******************* img *****************/
-img {
+/* img {
   max-width: 600px;
-}
+} */
 
 .img_center {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 600px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 /************** tekst **************/
@@ -52,7 +55,7 @@ h3 {
   min-width: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin: 10px;
+  margin: 11px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,9 +68,18 @@ h3 {
   margin: 10px;
 }
 
-.left_margin {
+.left_margin_ul {
   /*** skubber listerne ind i den blå boks ***/
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+li {
+  margin-left: 10px;
+}
+
+.left_margin_ol {
+  /*** skubber listerne ind i den blå boks ***/
+  margin-left: 10px;
 }
 
 /****************** Button ******************/
