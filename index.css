@@ -18,6 +18,11 @@ img {
 .p_forside {
   text-align: center;
   line-height: 2.2;
+  max-width: 430px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-family: "Heebo", sans-serif;
+  color: var(--primary-b-color);
 }
 
 @media (min-width: 800px) {
@@ -26,11 +31,21 @@ img {
     max-width: 800px;
     padding-top: 50px;
     font-size: 18px;
+    font-family: "Heebo", sans-serif;
   }
 }
 
 .h1_forside {
   text-align: center;
+  padding-top: 50px;
+  font-size: 36px;
+}
+
+@media (min-width: 800px) {
+  .h1_forside {
+    padding: 5px;
+    font-size: 40px;
+  }
 }
 
 /*** søge knappen */
@@ -104,7 +119,7 @@ img {
 
 @media (min-width: 800px) {
   .chevron_down {
-    top: 650px;
+    top: 750px;
     font-size: 3rem;
   }
 }
@@ -135,7 +150,7 @@ img {
 
 .forside_logo {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -147,7 +162,7 @@ img {
 @media (min-width: 800px) {
   .forside_logo {
     width: 200px;
-    top: 40%;
+    top: 55%;
   }
 }
 
@@ -162,11 +177,21 @@ img {
   gap: 20px;
 }
 
+.kategory_container img {
+  border-radius: 100px;
+}
+
 .kategory_scroll {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  padding: 20px;
+}
+
+.kategory_scroll div {
+  width: 190px;
+  margin: 0 auto;
 }
 
 @media (min-width: 800px) {
@@ -176,9 +201,12 @@ img {
     overflow-x: auto; /* horizontal scroll */
     -webkit-overflow-scrolling: touch;
     justify-content: flex-start;
-    gap: 80px;
-    padding: 30px;
-    width: 90%;
+    gap: 65px;
+    padding: 40px;
+  }
+
+  .kategory_scroll div {
+    min-width: 180px;
   }
 
   .kategory_container h1 {
