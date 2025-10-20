@@ -198,6 +198,7 @@ h2 {
   font-family: "DynaPuff", system-ui;
   color: var(--primary-b-color);
   /* font-size: 2.5rem; */
+  padding: 10px;
 }
 h3 {
   font-family: "DynaPuff", system-ui;

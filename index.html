@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
@@ -18,101 +17,108 @@
     <title>Forside</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="samlet.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="index.html">
-            <img src="img/hvid_logo.webp" alt="Logo" class="logo" />
-        </a>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">About us</a></li>
-                <li><a href="index.html">Profil</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+      <a href="index.html">
+        <img src="img/hvid_logo.webp" alt="Logo" class="logo" />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">About us</a></li>
+          <li><a href="index.html">Profil</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
     </header>
     <main>
-        <img class="forside_img" src="img/forside_billede.webp" alt="forside_billede-2" />
+      <img class="forside_img" src="img/forside_billede.webp" alt="forside_billede-2" />
 
-        <div class="forside_logo">
-            <img src="img/logo.webp" alt="forside_logo" />
+      <div class="forside_logo">
+        <img src="img/logo.webp" alt="forside_logo" />
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Search our budget-friendly recipes..." />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <a class="chevron_down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+      <p class="p_forside">Welcome to Home Made – budget-friendly food that tastes like more! Home Made is your go-to website for delicious, easy, and affordable meals that fit student life. Here you’ll find recipes, meal plans, and kitchen tips that make it easy to eat well – even on a student budget!</p>
+
+      <section class="kategory_container">
+        <h1 class="h1_forside">Our cuisines</h1>
+        <div class="kategory_scroll">
+          <!--  <div>
+            <a href="recipes.html?cuisine=Italian">
+              <img src="img/pizza.webp" alt="pizza billede" />
+              <h2>Italian</h2>
+            </a>
+          </div>
+          <div>
+            <a href="recipes.html?cuisine=Asian">
+              <img src="img/asian.webp" alt="asiatisk billede" />
+              <h2>Asian</h2>
+            </a>
+          </div>
+          <div>
+            <a href="recipes.html?cuisine=Asian">
+              <img src="img/american.webp" alt="american billede" />
+              <h2>American</h2>
+            </a>
+          </div>
+          <div>
+            <a href="recipes.html?cuisine=Mexican">
+              <img src="img/mexican.webp" alt="mexikansk billede" />
+              <h2>Mexican</h2>
+            </a>
+          </div>
+          <div>
+            <a href="recipes.html?cuisine=Mediterranean">
+              <img src="img/mediterreanean.webp" alt="mediterreanean billede" />
+              <h2>Mediterranean</h2>
+            </a>
+          </div>
+          <div>
+            <a href="recipes.html?cuisine=Pakistani">
+              <img src="img/pakistani.webp" alt="pakistani billede" />
+              <h2>Pakistani</h2>
+            </a>
+          </div> -->
         </div>
-
-        <div class="search_bar">
-            <input type="text" placeholder="Search our budget-friendly recipes..." />
-            <button type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </div>
-
-        <a class="chevron_down">
-            <i class="fa-solid fa-chevron-down"></i>
-        </a>
-        <p class="p_forside">Welcome to Home Made – budget-friendly food that tastes like more! Home Made is your go-to
-            website for
-            delicious, easy, and affordable meals that fit student life. Here you’ll find recipes, meal plans, and
-            kitchen tips that make it easy to eat well – even on a student budget!</p>
-
-        <section class="kategory_container">
-            <h1 class="h1_forside">Our cuisines</h1>
-            <div class="kategory_scroll">
-                <div>
-                    <img src="img/pizza.webp" alt="pizza billede" />
-                    <h2>Italien</h2>
-                </div>
-                <div>
-                    <img src="img/asian.webp" alt="asiatisk billede" />
-                    <h2>Asien</h2>
-                </div>
-                <div>
-                    <img src="img/american.webp" alt="american billede" />
-                    <h2>American</h2>
-                </div>
-                <div>
-                    <img src="img/mexican.webp" alt="mexikansk billede" />
-                    <h2>Mexican</h2>
-                </div>
-                <div>
-                    <img src="img/mediterreanean.webp" alt="mediterreanean billede" />
-                    <h2>Mediterreanean</h2>
-                </div>
-                <div>
-                    <img src="img/pakistani.webp" alt="pakistani billede" />
-                    <h2>Pakistani</h2>
-                </div>
-            </div>
-        </section>
+      </section>
     </main>
     <footer>
-        <section class="footer_box">
-            <div class="footer-content">
-                <h2>Make your inbox tasty</h2>
-                <p class="font_color">Sign up to our newsletter, to a receive a weekly foodplan, and get a 10% off on
-                    your next food shooping delivery from nemlig.com.</p>
-                <br />
-                <p class="font_color">Email address:</p>
-                <form class="signup-form">
-                    <input type="email" class="search-input" id="email" />
-                    <button>Sign up</button>
-                </form>
-                <div class="social-icons">
-                    <img src="img/Instagram Circle.svg" alt="Instagram" />
-                    <img src="img/Facebook.svg" alt="Facebook" />
-                </div>
-            </div>
-            <div class="footer-image">
-                <img src="img/croissantmand.webp" alt="mand" />
-            </div>
-        </section>
+      <section class="footer_box">
+        <div class="footer-content">
+          <h2>Make your inbox tasty</h2>
+          <p class="font_color">Sign up to our newsletter, to a receive a weekly foodplan, and get a 10% off on your next food shooping delivery from nemlig.com.</p>
+          <br />
+          <p class="font_color">Email address:</p>
+          <form class="signup-form">
+            <input type="email" class="search-input" id="email" />
+            <button>Sign up</button>
+          </form>
+          <div class="social-icons">
+            <img src="img/Instagram Circle.svg" alt="Instagram" />
+            <img src="img/Facebook.svg" alt="Facebook" />
+          </div>
+        </div>
+        <div class="footer-image">
+          <img src="img/croissantmand.webp" alt="mand" />
+        </div>
+      </section>
     </footer>
     <script src="index.js"></script>
     <script src="menu.js"></script>
-</body>
-
+  </body>
 </html>

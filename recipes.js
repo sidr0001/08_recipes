@@ -5,44 +5,32 @@ const cuisine = new URLSearchParams(window.location.search).get("cuisine");
 
 // filter
 let allData;
-document.querySelectorAll(".buttons button").forEach((btn) => {
-  btn.addEventListener("click", filterKlik);
-});
 
-function filterKlik(evt) {
-  showFiltered(evt.currentTarget.dataset.mealType);
-}
-function showFiltered(filter) {
-  if (filter === "All") {
-    showRecipes(allData);
-  } else {
-    const filteredRecipesArr = allData.filter((recipe) => recipe.mealType.includes(filter));
-    // const filteredRecipesArr = allData.filter((recipes) => recipes.mealType === filter);
-    showRecipes(filteredRecipesArr);
-  }
-  console.log("showFiltered", filter);
-  console.log(allData.filter((recipes) => recipes.mealType === filter));
-}
 // filter slut
-
-console.log("cuisine", cuisine);
-getData(`https://dummyjson.com/recipes?cuisine=${cuisine}`);
+getData(`https://dummyjson.com/recipes`);
 
 function getData(url) {
   fetch(url).then((res) =>
     res.json().then((data) => {
-      allData = data.recipes;
+      recipes = data.recipes;
+      let filteredRecipes = [];
+
+      //Filteret
+      recipes.forEach((recipe) => {
+        if (recipe.cuisine === cuisine) {
+          filteredRecipes.push(recipe);
+        }
+      });
+
+      allData = filteredRecipes;
       showRecipes(allData);
     })
   );
 }
 
 function showRecipes(recipes) {
-  console.log("recipes", recipes);
   recipeslist.innerHTML = "";
   recipes.forEach((recipes) => {
-    console.log(recipes.name);
-
     recipeslist.innerHTML += `
     <a href="specific.html?id=${recipes.id}">
     <section id="recipes_list">
@@ -60,4 +48,25 @@ function showRecipes(recipes) {
     </section>
     </a> `;
   });
+}
+
+document.querySelectorAll(".buttons button").forEach((btn) => {
+  btn.addEventListener("click", filterKlik);
+});
+
+function filterKlik(evt) {
+  showFiltered(evt.currentTarget.dataset.mealtype);
+}
+
+function showFiltered(filter) {
+  console.log("filter", filter);
+  if (filter === "All") {
+    showRecipes(allData);
+  } else {
+    const filteredRecipesArr = allData.filter((recipe) => recipe.mealType.includes(filter));
+    // const filteredRecipesArr = allData.filter((recipes) => recipes.mealType === filter);
+    showRecipes(filteredRecipesArr);
+  }
+  console.log("showFiltered", filter);
+  console.log(allData.filter((recipes) => recipes.mealType[0] === filter));
 }
