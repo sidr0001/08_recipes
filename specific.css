@@ -29,14 +29,24 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
   overflow: hidden;
   margin-bottom: 10px;
 }
 
+hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1150px;
+  color: #1b45a9;
+  margin-bottom: 30px;
+  margin-left: 9.5px;
+}
 /************** tekst **************/
 h1 {
   text-align: center;
+  margin-top: 50px;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -75,6 +85,8 @@ h3 {
 
 li {
   margin-left: 10px;
+  color: #1b45a9;
+  line-height: 180%;
 }
 
 .left_margin_ol {
@@ -138,5 +150,16 @@ li {
   .grid_info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 1150px;
+  }
+
+  .img_center {
+    height: 600px;
   }
 }
