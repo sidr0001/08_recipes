@@ -128,7 +128,7 @@ hr {
 .chevron_down {
   position: absolute;
   left: 50%;
-  top: 470px;
+  top: 62vh;
   transform: translateX(-50%);
   font-size: 2rem;
   color: #1b45a9;
@@ -138,8 +138,8 @@ hr {
 
 @media (min-width: 800px) {
   .chevron_down {
-    top: 710px;
-    font-size: 3rem;
+    top: 96vh;
+    font-size: 2.5rem;
   }
 }
 
