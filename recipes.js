@@ -10,6 +10,7 @@ let allData;
 getData(`https://dummyjson.com/recipes`);
 
 function getData(url) {
+  document.querySelector("h1").textContent = cuisine;
   fetch(url).then((res) =>
     res.json().then((data) => {
       recipes = data.recipes;
@@ -34,7 +35,6 @@ function showRecipes(recipes) {
     recipeslist.innerHTML += `
   
         <article class="blaaboks">
-
         <div>
           <h2>${recipes.name}</h2>
           </div>
