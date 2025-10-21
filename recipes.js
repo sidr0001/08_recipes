@@ -32,21 +32,25 @@ function showRecipes(recipes) {
   recipeslist.innerHTML = "";
   recipes.forEach((recipes) => {
     recipeslist.innerHTML += `
-    <a href="specific.html?id=${recipes.id}">
-    <section id="recipes_list">
-    <article class="blaaboks">
-                    <h2>${recipes.name}</h2>
-                    <div>
-                        <img src="https://cdn.dummyjson.com/recipe-images/${recipes.id}.webp" alt="mad" />
-                    </div>
-                    <div>
-                    <p>Prep time: ${recipes.prepTimeMinutes} min.</p>
-                    <p>Cooking time: ${recipes.cookTimeMinutes} min.</p>
-                    <p> Difficulty: ${recipes.difficulty}</p>
-                    </div>
-    </article>
-    </section>
-    </a> `;
+  
+        <article class="blaaboks">
+
+        <div>
+          <h2>${recipes.name}</h2>
+          </div>
+          <div>
+ <a href="specific.html?id=${recipes.id}">
+            <img src="https://cdn.dummyjson.com/recipe-images/${recipes.id}.webp" alt="mad" />
+         </a>
+            </div>
+          <div class="p_margin">
+            <p>Prep time: ${recipes.prepTimeMinutes} min.</p>
+            <p>Cooking time: ${recipes.cookTimeMinutes} min.</p>
+            <p> Difficulty: ${recipes.difficulty}</p>
+          </div>
+        </article>
+    
+`;
   });
 }
 
