@@ -38,7 +38,15 @@ img {
   gap: 20px;
 }
 
-
+hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1150px;
+  color: #1b45a9;
+  margin-bottom: 30px;
+  margin-left: 9.5px;
+}
 /********  Kortdesign  *******/
 .blaaboks {
   display: grid;
@@ -59,24 +67,26 @@ img {
   height: auto;
   display: block;
   border-radius: 50%;
-} 
+}
 
 a {
   text-decoration: none;
 }
 
-p{
+p {
   color: #1b45a9;
-   line-height: 180%;
+  line-height: 180%;
+}
+h1 {
+  font-size: 3.5rem;
 }
 
-h2{
+h2 {
   font-size: 1.8rem;
 }
 
-.p_margin{
+.p_margin {
   margin-top: 20px;
- 
 }
 
 /* lidt spacing inde i kortene */
@@ -88,4 +98,4 @@ h2{
 .blaaboks p {
   font-size: 20px;
   line-height: 180%;
-} */
+}
